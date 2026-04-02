@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KartNinja</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+
+  <div id="menu" class="menu">
+    <h1>KartNinja 🥷</h1>
+    <div class="menu-options">
+      <label>Seviye:
+        <select id="level">
+          <option value="easy">Kolay</option>
+          <option value="medium">Orta</option>
+          <option value="hard">Zor</option>
+        </select>
+      </label>
+      <label>Tema:
+        <select id="theme">
+          <option value="emoji">Emoji</option>
+          <option value="animal">Hayvanlar</option>
+          <option value="color">Renkler</option>
+          <option value="minimal">Minimal</option>
+        </select>
+      </label>
+      <button id="start-game">Başlat</button>
+      <button id="view-scores">Skor Tablosu</button>
+    </div>
+  </div>
+
+  <div id="scores" class="hidden">
+    <h2>En Yüksek Skorlar 🏆</h2>
+    <ul id="score-list"></ul>
+    <button id="back-to-menu">Ana Menü</button>
+  </div>
+
+  <div id="game" class="game hidden">
+    <div class="info">
+      <span id="score">Puan: 0</span>
+      <span id="moves">Hamle: 0</span>
+      <span id="timer">Süre: 0s</span>
+    </div>
+    <div id="game-board" class="game-board"></div>
+    <button id="restart">Yeniden Başlat</button>
+    <button id="back-menu">Ana Menü</button>
+  </div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
